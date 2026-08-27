@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FBF8F3] text-[#2B1E16] min-h-screen font-sans antialiased selection:bg-[#B87D4B] selection:text-white;
+  }
+}
+
+.panel-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8DEC8;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px -2px rgba(43, 30, 22, 0.04);
+}
+
+.panel-surface {
+  background-color: #F7F3EB;
+  border: 1px solid #E8DEC8;
+}
+
+.btn-primary {
+  @apply bg-[#B87D4B] hover:bg-[#A06838] text-white font-medium px-4 py-2 rounded-xl transition-all duration-150 active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed shadow-sm;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-[#F7F3EB] text-[#2B1E16] border border-[#E8DEC8] font-medium px-4 py-2 rounded-xl transition-all duration-150 active:scale-[0.99];
+}
+
+/* Custom Soft Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FBF8F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8DEC8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D5C8AE;
+}
